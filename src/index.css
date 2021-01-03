@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.button {
+  @apply border-2 text-xs font-semibold border-solid border-green-600 rounded-md text-green-600 hover:bg-green-600 hover:text-white px-6 py-3;
+}
+
+.input-field {
+  @apply border border-solid border-gray-300 p-3 text-sm rounded-md focus:outline-none focus:ring-2 focus:ring-green-600 shadow-sm;
 }
